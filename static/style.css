@@ -1,0 +1,108 @@
+:root {
+  --margin: 15px;
+  --text-color: #5f5f91;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  font-family: 'Victor Mono', monospace;
+  font-size: 30px;
+  background-color: #171723;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  user-select: none;
+  color: var(--text-color);
+  text-shadow: 0 0 0.5rem #0f0f18;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+}
+
+#left {
+  margin: 10px;
+}
+
+#boggle {
+  margin: var(--margin);
+}
+
+.board {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.row {
+  user-select: none;
+  margin: var(--margin);
+}
+
+.cell {
+  margin: 0 12px ;
+  text-shadow: 0 0 0.5rem #050508;
+  color: var(--text-color);
+}
+
+.words {
+  color: var(--text-color);
+}
+
+input {
+  background-color: #222235;
+  border: none;
+  width: 230px;
+  height: 35px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+input:focus {
+  outline: none;
+  background-color: var(--text-color);
+  color: #1e1e31;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+button {
+  width: 30%;
+  height: 20px;
+  border: none;
+  outline: none;
+  color: #171723;
+  background-color: var(--text-color);
+  border-radius: 5px;
+  transition: 0.2s;
+  margin-bottom: var(--margin);
+}
+
+button:hover {
+  color: var(--text-color);
+  background-color: #171723;
+  box-shadow: 0 0 1rem var(--text-color);
+}
